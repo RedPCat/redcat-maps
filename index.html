@@ -1,3 +1,13 @@
-<iframe
-  src='https://api.mapbox.com/styles/v1/redpcat/ckh9dowfg0ssm19qn23f9tq2f.html?fresh=true&title=view&access_token=pk.eyJ1IjoicmVkcGNhdCIsImEiOiJja2g5ZDh2cXcwMGw4MnF1c24zNG9wdG9mIn0.KI_2iC7nKqjFOVp6SWNg2w?access_token=pk.eyJ1IjoicmVkcGNhdCIsImEiOiJja2g5ZDh2cXcwMGw4MnF1c24zNG9wdG9mIn0.KI_2iC7nKqjFOVp6SWNg2w?fresh=true&title=view&access_token=pk.eyJ1IjoicmVkcGNhdCIsImEiOiJja2g5ZDh2cXcwMGw4MnF1c24zNG9wdG9mIn0.KI_2iC7nKqjFOVp6SWNg2w#15/37.771/-122.436?title=true&zoomwheel=false&access_token=pk.eyJ1IjoicmVkcGNhdCIsImEiOiJja2g5ZDh2cXcwMGw4MnF1c24zNG9wdG9mIn0.KI_2iC7nKqjFOVp6SWNg2w' width='100%' height='400px'>
-</iframe>  
+<title>Redcat Maps</title>
+<head><script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' /></head>
+<body><div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoicmVkcGNhdCIsImEiOiJja2g5ZDh2cXcwMGw4MnF1c24zNG9wdG9mIn0.KI_2iC7nKqjFOVp6SWNg2w';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/redpcat/ckh9dowfg0ssm19qn23f9tq2f', // stylesheet location
+center: [-74.5, 40], // starting position [lng, lat]
+zoom: 9 // starting zoom
+});
+</script></body>
